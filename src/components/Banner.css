@@ -47,6 +47,8 @@
   .banner__title {
     font-size: 3rem;
     font-weight: 600;
+    text-align: start;
+    padding-top: 20px;
     padding-bottom: 0.5rem;
   }
   .banner__description {
