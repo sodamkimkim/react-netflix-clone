@@ -1,6 +1,7 @@
 import './App.css';
 import requests from './api/request.js';
 import Banner from './components/Banner.js';
+import Footer from './components/Footer.js';
 import Nav from './components/Nav.js';
 import Row from './components/Row.js';
 
@@ -18,6 +19,7 @@ function App() {
         <Row title="Top Rated" id="TR" fetchUrl={requests.fetchTopRated}/>
         <Row title="Action Movies" id="AM" fetchUrl={requests.fetchActionMovies}/>
         <Row title="Comedy Movies" id="Cm" fetchUrl={requests.fetchComedyMovies}/>
+        <Footer/>
     </div>);
 }
 
