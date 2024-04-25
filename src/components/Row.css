@@ -43,7 +43,7 @@
     visibility: hidden;
   }
   .arrow {
-    transition: 400ms all ease-in-out;
+    transition: 400ms all ease-in-out; 
   }
   .arrow:hover {
     transition: 400ms all ease-in-out;

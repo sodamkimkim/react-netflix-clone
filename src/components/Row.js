@@ -17,7 +17,14 @@ const Row = ({title, id, fetchUrl, isLargeRow}) => {
             <h2>{title}</h2>
             <div className='slider'>
                 <div className='slider__arrow-left'>
-                    <span className='arrow'>
+                    <span
+                        className='arrow'
+                        onClick={() => {
+                            console.log(window.innerWidth)
+                            document
+                                .getElementById(id)
+                                .scrollLeft -= window.innerWidth - 80;
+                        }}>
                         {"<"}
                     </span>
                 </div>
@@ -34,9 +41,15 @@ const Row = ({title, id, fetchUrl, isLargeRow}) => {
                         ))
                     }
                 </div>
-            </div>
-            <div className='slider__arrow-right'>
-                    <span className='arrow'>{">"}</span>
+                <div className='slider__arrow-right'>
+                    <span
+                        className='arrow'
+                        onClick={() => {
+                            document
+                                .getElementById(id)
+                                .scrollLeft += window.innerWidth - 80;
+                        }}>{">"}</span>
+                </div>
             </div>
         </section>
     )
