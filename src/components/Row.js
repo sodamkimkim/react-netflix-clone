@@ -2,7 +2,7 @@ import axios from '../api/axios.js';
 import React, {useEffect, useState} from 'react'
 import "./Row.css";
 import MovieModal from './MovieModal/index.js';
-const Row = ({title, id, fetchUrl, isLargeRow}) => {
+export default function Row   ({title, id, fetchUrl, isLargeRow}) {
     const [movies, setMovies] = useState([]);
     const [modalOpen, setModalOpen] = useState(false);
     const [movieSelected, setMovieSelected] =useState([]);
@@ -66,6 +66,4 @@ const Row = ({title, id, fetchUrl, isLargeRow}) => {
 
         </section>
     )
-}
-
-export default Row
+} 

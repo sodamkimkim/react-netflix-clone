@@ -1,11 +1,10 @@
 import React from 'react'
 
-const DetailPage = () => {
+export default function DetailPage ()  {
   return (
     <div>
       
     </div>
   )
 }
-
-export default DetailPage
+ 

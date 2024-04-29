@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Footer = () => {
+export default function Footer   ()   {
     return (
         <FooterContainer>
             <FooterContent>
@@ -26,20 +26,19 @@ const Footer = () => {
         </FooterContainer>
     )
 }
-
-export default Footer
-
+ 
 const FooterContainer = styled.div
 `
 display: flex;
 justify-content: center;
 align-items: center;
 padding: 40px 0;
+margin-top: 80px;
 border-top: 1px solid rgb(25, 25, 25);
 width: 100%;
 position: relative;
 z-index: 100;
-
+background-color: black;
 @media(max-width: 769px) {
   padding: 20px 20px;
   padding-bottom: 30px;

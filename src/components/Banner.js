@@ -4,7 +4,7 @@ import axios from '../api/axios.js';
 import "./Banner.css";
 import styled from 'styled-components';
 
-const Banner = () => {
+export default function Banner  ()  {
     const [movie, setMovie] = useState([]);
     const [isClicked, setIsClicked] = useState(false)
     useEffect(() => {
@@ -106,5 +106,4 @@ const Banner = () => {
     }
 
 }
-
-export default Banner
+ 

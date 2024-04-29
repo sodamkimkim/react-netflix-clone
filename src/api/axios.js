@@ -8,3 +8,5 @@ const instance = axios.create({
 });
 
 export default instance
+
+// https://api.themoviedb.org/3/search/multi?include_adult=false&query=spider&api_key=0a1e1ac69550c51c58f6d7efbcaa7d3b&language=ko-KR

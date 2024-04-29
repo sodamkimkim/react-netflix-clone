@@ -8,13 +8,13 @@ import DetailPage from "./pages/DetailPage";
 import SearchPage from "./pages/SearchPage";
 
 const Layout = () => {
-    return (<div>
+    return (<div style={{"backgroundColor": "black"}}>
         <Nav/>
         <Outlet/>
         <Footer/>
     </div>);
 };
-const App = () => {
+export default function App  ()   {
     return (
         <div className="app">
             <Routes>
@@ -26,6 +26,4 @@ const App = () => {
             </Routes>
         </div>
     );
-}
-
-export default App;
+} 

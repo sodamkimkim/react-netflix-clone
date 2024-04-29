@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import "./MovieModal.css";
 
-const MovieModal = ({
+export default function MovieModal  ({
     base_url,
     backdrop_path,
     title,
@@ -11,7 +11,7 @@ const MovieModal = ({
     first_air_date,
     vote_average,
     setModalOpen
-}) => {
+})   {
     return (
         <div className='presentation'>
             <div className='wrapper-modal'>
@@ -43,5 +43,4 @@ const MovieModal = ({
             </div>
         </div>
     )
-}
-export default MovieModal; 
+} 

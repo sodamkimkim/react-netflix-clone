@@ -1,8 +1,8 @@
-import './App.css';
-import requests from './api/request.js';
+import '../../App.css';
+import requests from '../../api/request.js';
 import Banner from "../../components/Banner.js"; 
-import Row from './components/Row.js'; 
-function MainPage() {
+import Row from '../../components/Row.js'; 
+export default function MainPage() {
     return (<div className="App"> 
         <Banner/>
         <Row
@@ -16,6 +16,4 @@ function MainPage() {
         <Row title="Action Movies" id="AM" fetchUrl={requests.fetchActionMovies}/>
         <Row title="Comedy Movies" id="Cm" fetchUrl={requests.fetchComedyMovies}/> 
     </div>);
-}
-
-export default MainPage;
+} 
