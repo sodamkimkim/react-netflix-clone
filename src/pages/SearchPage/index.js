@@ -1,10 +1,11 @@
 import axios from '../../api/axios';
 import React, {useState, useEffect} from 'react'
-import {useLocation} from 'react-router-dom';
+import {useLocation, useNavigate} from 'react-router-dom';
 import '../SearchPage/SearchPage.css';
 import useDebounce from '../../hooks/useDebounce';
 export default function SearchPage() {
     // console.log('useLocation', useLocation());
+    const navigate = useNavigate();
     const [searchResults, setSearchResults] = useState([]);
     const useQuery = () => {
         return new URLSearchParams(useLocation().search);
@@ -37,7 +38,7 @@ export default function SearchPage() {
                             if (movie.backdrop_path !== null && movie.media_type !== "person") {
                                 const movieImageUrl = "https://images.tmdb.org/t/p/w500" + movie.backdrop_path
                                 return (
-                                    <div className='movie' key={index}>
+                                    <div className='movie' key={index} onClick={()=>navigate(`/${movie.id}`)}>
                                         <div className='movie__column-poster'>
                                             <img src={movieImageUrl} alt="movie" className='movie__poster'></img>
                                         </div> 
