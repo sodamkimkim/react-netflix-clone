@@ -1,7 +1,8 @@
-import React, {useState} from 'react'
+import React, {useRef, useState} from 'react'
 import "./MovieModal.css";
+import useOnClickOutside from '../../hooks/useOnClickOutside';
 
-export default function MovieModal  ({
+export default function MovieModal({
     base_url,
     backdrop_path,
     title,
@@ -11,11 +12,15 @@ export default function MovieModal  ({
     first_air_date,
     vote_average,
     setModalOpen
-})   {
+}) {
+    const ref = useRef();
+    useOnClickOutside(ref, () => {
+        setModalOpen(false);
+    });
     return (
         <div className='presentation'>
             <div className='wrapper-modal'>
-                <div className='modal'>
+                <div className='modal' ref={ref}>
                     <span onClick={() => setModalOpen(false)} className='modal-close'>X
                     </span>
                     <img
@@ -24,7 +29,7 @@ export default function MovieModal  ({
                         alt="modal__poster-img"/>
                     <div className='modal__content'>
                         <p className='modal__details'>
-                            <span className='modal__user-perc'>{Math.floor(Math.random()*100)}% for you</span>  
+                            <span className='modal__user-perc'>{Math.floor(Math.random() * 100)}% for you</span>
                             {
                                 release_date
                                     ? release_date
@@ -43,4 +48,4 @@ export default function MovieModal  ({
             </div>
         </div>
     )
-} 
+}
