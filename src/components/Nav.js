@@ -29,10 +29,8 @@ export default function Nav() {
                 src='//upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/200px-Netflix_2015_logo.svg.png'
                 className='nav_logo'
                 onClick={() => {
-                    window
-                        .location
-                        .reload();
-                    console.log("window.location.reload()");
+                    navigate('/');
+                     window.location.reload(); 
                 }}/>
             <input className='nav__input' value={searchValue} type='text' onChange={handleChanged} placeholder='영화를 검색해 주세요'/>
             <img
