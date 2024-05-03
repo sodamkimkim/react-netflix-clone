@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-netflix-clone/static/css/main.a688435f.css",
-    "main.js": "/react-netflix-clone/static/js/main.1af97f1f.js",
-    "static/js/453.4d78b4ad.chunk.js": "/react-netflix-clone/static/js/453.4d78b4ad.chunk.js",
-    "index.html": "/react-netflix-clone/index.html",
-    "main.a688435f.css.map": "/react-netflix-clone/static/css/main.a688435f.css.map",
-    "main.1af97f1f.js.map": "/react-netflix-clone/static/js/main.1af97f1f.js.map",
-    "453.4d78b4ad.chunk.js.map": "/react-netflix-clone/static/js/453.4d78b4ad.chunk.js.map"
+    "main.css": "/sodamkimkim.github.io/react-netflix-clone/static/css/main.a688435f.css",
+    "main.js": "/sodamkimkim.github.io/react-netflix-clone/static/js/main.88a4d36a.js",
+    "static/js/453.4d78b4ad.chunk.js": "/sodamkimkim.github.io/react-netflix-clone/static/js/453.4d78b4ad.chunk.js",
+    "index.html": "/sodamkimkim.github.io/react-netflix-clone/index.html",
+    "main.a688435f.css.map": "/sodamkimkim.github.io/react-netflix-clone/static/css/main.a688435f.css.map",
+    "main.88a4d36a.js.map": "/sodamkimkim.github.io/react-netflix-clone/static/js/main.88a4d36a.js.map",
+    "453.4d78b4ad.chunk.js.map": "/sodamkimkim.github.io/react-netflix-clone/static/js/453.4d78b4ad.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a688435f.css",
-    "static/js/main.1af97f1f.js"
+    "static/js/main.88a4d36a.js"
   ]
 }
